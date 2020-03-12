@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f1a570f9-84bb-4126-8072-ab660024f573" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../jack/apache-maven-3.3.1/apache-maven-3.3.1" />
+        <option name="userSettingsFile" value="F:\jack\apache-maven-3.3.1\apache-maven-3.3.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Z1Hcnb9lg5uzjsBmFnIetEyU7W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../20200312-m/all-repast-app-parent" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.aaa.lee.repast.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AddressUtil">
+    <configuration name="AddressUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aaa.lee.repast.utils.AddressUtil" />
+      <module name="repast-app-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aaa.lee.repast.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRun6081" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="repast-app-memberinfo-consumer-6081" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aaa.lee.repast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aaa.lee.repast.ApplicationRun6081" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRun7081" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="repast-app-eureka-7081" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aaa.lee.repast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aaa.lee.repast.ApplicationRun7081" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRun8081" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="repast-app-memberinfo-provider-8081" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aaa.lee.repast.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aaa.lee.repast.ApplicationRun8081" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AddressUtil" />
+        <item itemvalue="Spring Boot.ApplicationRun6081" />
+        <item itemvalue="Spring Boot.ApplicationRun8081" />
+        <item itemvalue="Spring Boot.ApplicationRun7081" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f1a570f9-84bb-4126-8072-ab660024f573" name="Default Changelist" comment="" />
+      <created>1583999770443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583999770443</updated>
+      <workItem from="1583999783895" duration="6218000" />
+      <workItem from="1584006085819" duration="146000" />
+      <workItem from="1584006262854" duration="2919000" />
+      <workItem from="1584017963603" duration="2803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="621" y="184" key="#Notifications" timestamp="1584000908334">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="621" y="184" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1584000908334" />
+    <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1584007256879">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="227" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1584007256879" />
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1584018139515">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1584018139515" />
+    <state width="1880" height="296" key="GridCell.Tab.0.bottom" timestamp="1584020626964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1880" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584020626964" />
+    <state width="1880" height="296" key="GridCell.Tab.0.center" timestamp="1584020626957">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1880" height="296" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584020626957" />
+    <state width="1880" height="296" key="GridCell.Tab.0.left" timestamp="1584020626946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1880" height="296" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584020626946" />
+    <state width="1880" height="296" key="GridCell.Tab.0.right" timestamp="1584020626961">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1880" height="296" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584020626961" />
+    <state width="1876" height="291" key="GridCell.Tab.1.bottom" timestamp="1584011410560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="291" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584011410560" />
+    <state width="1876" height="291" key="GridCell.Tab.1.center" timestamp="1584011410559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="291" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584011410559" />
+    <state width="1876" height="291" key="GridCell.Tab.1.left" timestamp="1584011410559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="291" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584011410559" />
+    <state width="1876" height="291" key="GridCell.Tab.1.right" timestamp="1584011410559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="291" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584011410559" />
+    <state x="448" y="193" key="SettingsEditor" timestamp="1584006226577">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="448" y="193" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584006226577" />
+  </component>
+</project>
