@@ -1,6 +1,6 @@
 package com.aaa.lee.repast.utils;
 
-import com.esotericsoftware.reflectasm.MethodAccess;
+//import com.esotericsoftware.reflectasm.MethodAccess;
 import org.objenesis.Objenesis;
 import org.objenesis.ObjenesisStd;
 
@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  **/
 public class Map2BeanUtil {
 
-    private final static Objenesis OBJENESIS = new ObjenesisStd(true);
+   /* private final static Objenesis OBJENESIS = new ObjenesisStd(true);
 
     private final static StringBuilder STRING_BUILDER = new StringBuilder();
 
@@ -24,7 +24,7 @@ public class Map2BeanUtil {
     private final static ConcurrentHashMap<Class, MethodAccess> CONCURRENT_HASH_MAP =
             new ConcurrentHashMap<Class, MethodAccess>(16);
 
-    /**
+    *//**
      * @author Seven Lee
      * @description
      *      Map转换Java Bean
@@ -32,7 +32,7 @@ public class Map2BeanUtil {
      * @date 2020/3/12
      * @return T
      * @throws
-    **/
+    **//*
     public static <T> T map2Bean(Map<String, Object> map, Class<T> clazz) {
         // 每一个实体对象都会有一个Class对象
         // T instance = clazz.newInstance();// 通过java自带的--->有可能是一个null对象(空指针异常)
@@ -47,7 +47,7 @@ public class Map2BeanUtil {
 
         // 3.遍历转换
         for(Map.Entry<String, Object> entry : map.entrySet()) {
-            /**
+            *//**
              * java Bean(User.java):
              *      private String name;
              *      private String password;
@@ -60,7 +60,7 @@ public class Map2BeanUtil {
              *      public void setName(String name) {
              *
              *      }
-             */
+             *//*
             String setMethodName = getSetMethodName(entry.getKey());
             int index = methodAccess.getIndex(setMethodName, entry.getValue().getClass());
             // 通过反射来获取对象(属性，set方法了，set方法的内容也有了)
@@ -70,7 +70,7 @@ public class Map2BeanUtil {
     }
 
 
-    /**
+    *//**
      * @author Seven Lee
      * @description
      *      通过字段获取set方法
@@ -78,14 +78,14 @@ public class Map2BeanUtil {
      * @date 2020/3/12
      * @return java.lang.String
      * @throws
-    **/
+    **//*
     private static String getSetMethodName(String filedName) {
         STRING_BUILDER.setLength(0);
         // name -->> setName
         return STRING_BUILDER.append("set").append(firstToUpperCase(filedName)).toString();
     }
 
-    /**
+    *//**
      * @author Seven Lee
      * @description
      *      定义首字母大写的转换方法
@@ -93,10 +93,10 @@ public class Map2BeanUtil {
      * @date 2020/3/12
      * @return java.lang.String
      * @throws
-    **/
+    **//*
     private static String firstToUpperCase(String str) {
         // setName();-->set N要大写(并不确定在Map中N是否大写--->所以统一转换)
         return str.substring(0,1).toUpperCase() + str.substring(1, str.length());
-    }
+    }*/
 
 }

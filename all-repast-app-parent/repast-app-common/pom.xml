@@ -64,10 +64,10 @@
         </dependency>
 
         <!--高性能反射工具-->
-        <dependency>
+        <!--<dependency>
             <groupId>com.esotericsoftware</groupId>
             <artifactId>reflectasm</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
 

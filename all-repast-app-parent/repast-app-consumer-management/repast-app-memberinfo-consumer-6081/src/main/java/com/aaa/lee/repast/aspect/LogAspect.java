@@ -3,7 +3,9 @@ package com.aaa.lee.repast.aspect;
 import com.aaa.lee.repast.annotation.LoginLogAnnotation;
 import com.aaa.lee.repast.controller.MemberController;
 import com.aaa.lee.repast.model.LoginLog;
+import com.aaa.lee.repast.model.Member;
 import com.aaa.lee.repast.service.IRepastService;
+import com.aaa.lee.repast.utils.AddressUtil;
 import com.aaa.lee.repast.utils.DateUtil;
 import com.aaa.lee.repast.utils.IPUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +19,9 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.util.Date;
+import java.util.Map;
+
+import static com.aaa.lee.repast.staticstatus.StatiCode.*;
 
 /**
  * @Company AAA软件教育
@@ -28,7 +33,7 @@ import java.util.Date;
 @Slf4j
 @Component
 @Aspect
-public class LogAspect {
+public class    LogAspect {
 
     @Autowired
     private IRepastService repastService;
@@ -39,7 +44,7 @@ public class LogAspect {
      *      就是为了定义切面，也就是说让AOP在哪里生效
      *      也就是说当AOP检测到LoginLogAnnotation注解的时候，被该注解所标识的方法就会执行
      *      切面业务代码
-     * @param []
+     * @param
      * @date 2020/3/11
      * @return void
      * @throws
@@ -57,7 +62,7 @@ public class LogAspect {
      *      中的所有参数
      *      也就是说我可以通过这个ProceedingJoinPoint参数获取(获取目标路径的方法名，方法参数个数，方法参数类型，方法
      *      返回值，方法参数的值)
-     * @param [proceedingJoinPoint]
+     * @param proceedingJoinPoint
      * @date 2020/3/11
      * @return java.lang.Object
      * @throws
@@ -79,7 +84,18 @@ public class LogAspect {
 
         // 如何获取MemberController中doLogin方法中的Member参数对象
         Object[] args = proceedingJoinPoint.getArgs();
+        /**
+         * 第一种:(这种情况就只能适用于方法中只有一个参数，如果方法中多个参数的情况下，需要做判断)
+         *      通过member获取
+         *      通过这种形式发现member中没有province信息
+         *      通过这种方式去获取openId
+         *      至于city和province不会通过这种形式获取(因为数据不准确)
+         *
+         *      member是从微信端传递过来的--->获取的是用户所设置的地区--->这个地区是随意(想写哪就写哪)
+         */
+        Member member=new Member();
         for (Object arg : args) {
+            member= (Member) arg;
             System.out.println(arg);
         }
 
@@ -110,16 +126,24 @@ public class LogAspect {
                 }
             }
         }
-
+        /**
+         * 第二种方式:
+         *      通过用户的ip地址来获取用户的地理位置
+         *      会使用到一个外部API(百度)
+         *      ---->自己去定义一个工具类(向百度api去发送请求--->再去接收百度api所响应回来的数据)
+         */
+        // 百度api只能获取静态公网ip(俗称服务器的ip)--->或者获取运营商的手机ip
+        // 只能模拟ip地址
+        Map<String, Object> addressMap = AddressUtil.getAddresses(TEST_IP, ENCODING);
         LoginLog loginLog = new LoginLog();
         // 在member对象中
-        // loginLog.setProvince(); // 省份信息
+        loginLog.setProvince((String) addressMap.get(PROVINCE)); // 省份信息
         loginLog.setLoginType(3);// 登录类型(3:小程序)
-        // loginLog.setCity();// 城市信息
-        String dateString = DateUtil.formatDate(new Date(), "yyyy-MM-dd hh:mm:ss");
+        loginLog.setCity((String) addressMap.get(CITY));// 城市信息
+        String dateString = DateUtil.formatDate(new Date(), FORMAT_DATE);
         loginLog.setCreateTime(dateString);// 日志创建时间
         loginLog.setIp(ipAddr);// 用户ip地址
-        // loginLog.setOpenId();// 微信所传递过来的openId
+         loginLog.setOpenId(member.getOpenId());// 微信所传递过来的openId
         // 在LoginLog注解中
         loginLog.setOperationType(operationType);// 操作类型
         loginLog.setOperationName(operationName);// 具体操作事项
